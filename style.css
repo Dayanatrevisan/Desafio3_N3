@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: #bfd7e4;
+}
+
+body::before {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  content: '';
+  width: 100%;
+  height: 465px;
+  background-color: #293241;
+}
+
+
+
+header {
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 36px;
+  line-height: 45px;
+  padding-top: 107px;
+}
+
+header img {
+  padding-bottom: 32px;
+}
+
+header p {
+  margin-bottom: 25px;
+}
+
+.header {
+  width: 750px;
+  height: 133px;
+  border-radius: 20px 20px 0 0;
+  background-color: #f67669;
+  margin: auto;
+  padding: 50px 275px;
+
+  font-family: 'Staatliches', sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  color: #ffffff;
+}
+
+form {
+  width: 750px;
+  height: 960px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 29.66px 64px 64px 64px;
+}
+
+label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+ 
+  margin-bottom: 7.93px;
+}
+
+label span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  color: hsla(258, 14%, 77%, 1);
+
+}
+
+label span:hover {
+  font-weight: bold;
+  color: rgb(121, 119, 125);
+}
+
+legend {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  color: hsla(210, 37%, 23%, 1);
+  margin: auto;
+  margin-top: 31.73px 39.66px;
+
+  border-bottom: 1px solid hsla(240, 25%, 92%, 1);
+  width: 622px;
+  padding-top: 31.73px;
+  padding-bottom: 7.93px;
+  text-align: center;
+  margin-bottom: 31.73px;
+}
+
+select {
+  width: 300px;
+  height: 55.53px;
+  top: 526.39px;
+  left: 409px;
+  border-radius: 8px;
+  background-color: #fafafc;
+  border-color: hsla(240, 24%, 92%, 1);
+}
+
+select:hover {
+  font-family: 'Poppins', sans-serif;
+}
+
+option {
+  font-family: 'Poppins', sans-serif;
+  padding-left: 24px;
+}
+
+textarea {
+  border-radius: 8px;
+  background-color: #fafafc;
+  border-color: hsla(240, 24%, 92%, 1);
+  font-family: 'Poppins', sans-serif;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 608px;
+  height: 166.59px;
+}
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+.checkbox-wrapper input {
+  width: 24px;
+  height: 23.8px;
+  border-radius: 8px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.checkbox-wrapper input:focus + label::before {
+  outline: 2px solid black;
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 29.54px;
+}
+
+.checkbox-wrapper label::before {
+  content: '';
+  width: 24px;
+  height: 23.8px;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid hsla(240, 25%, 92%, 1);
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 55.53px;
+  top: 526.39px;
+  left: 409px;
+  border-radius: 8px;
+  background-color: #fafafc;
+  border-color: hsla(240, 24%, 92%, 1);
+}
+
+.col-2 {
+  display: flex;
+  gap: 22px;
+}
+
+.col-2 input {
+  width: 300px;
+}
+
+.input-wrapper {
+  margin-bottom: 18.84px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset-wrapper {
+  border: none;
+}
+
+
+
+.date-and-hour {
+  display: flex;
+  gap: 32px;
+}
+
+.hour {
+  display: flex;
+  gap: 10px;
+}
+
+
+
+#date {
+  width: 300px;
+  margin-top: 7.93px;
+}
+
+
+#time-finish{
+  width: 140px;
+}
+
+#time-begin{
+  width: 140px;
+  margin-top: 7.93px;
+}
+
+footer {
+  border-radius: 0 0 20px 20px;
+  width: 750px;
+  height: 115px;
+  background-color: #ffffff;
+  margin: auto;
+  padding-left: 64px;
+  padding-bottom: 64px;
+}
+
+button {
+  width: 622px;
+  height: 51px;
+  background-color: #f67669;
+  color: #ffffff;
+  font-family: 'Staatliches', sans-serif;
+  font-size: 20px;
+  padding: 12.5px 286px;
+  border: none;
+  border-radius: 8px;
+}
+
+
+button:hover{
+  background-color: #b9584e;
+ 
+  border: 3px solid #293241;
+}
